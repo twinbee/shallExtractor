@@ -3,7 +3,7 @@ import PyPDF2
 import re
 import argparse
 
-def extract_paragraphs_with_word(input_file, output_file, word='shall'):
+def extract_paragraphs_with_word(input_file, output_file, search_word='shall'):
     pdf_text = ""
     with open(input_file, 'rb') as pdf_file:
         pdf_reader = PyPDF2.PdfFileReader(pdf_file)
@@ -20,13 +20,13 @@ def extract_paragraphs_with_word(input_file, output_file, word='shall'):
         section_info = sections[i]
         section_desc = sections[i + 1] if i + 1 < len(sections) else ""
 
-        sentences = [line for line in sections[i + 2].split('\n') if word in line.lower()]
+        sentences = [line for line in sections[i + 2].split('\n') if search_word in line.lower()]
         for sentence in sentences:
             rows.append([section_info, section_desc, sentence.strip()])
 
     with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
         csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(['Section Info', 'Nearest Subheading', 'Sentence with "{}"'.format(word)])
+        csvwriter.writerow(['Section Info', 'Nearest Subheading', 'Sentence with "{}"'.format(search_word)])
         for row in rows:
             csvwriter.writerow(row)
 
@@ -34,10 +34,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Extract sentences containing a specific word from a PDF file and save them in a CSV file.')
     parser.add_argument('input_pdf', help='Path to the input PDF file')
     parser.add_argument('output_csv', nargs='?', help='Path to the output CSV file. If not specified, the name of the PDF file with .csv extension will be used.')
+    parser.add_argument('--search-word', '-s', default='shall', help='Word to search for in the PDF content')
 
     args = parser.parse_args()
     input_pdf_path = args.input_pdf
     output_csv_path = args.output_csv or (input_pdf_path[:-4] + '.csv')
+    search_word = args.search_word
 
-    extract_paragraphs_with_word(input_pdf_path, output_csv_path)
+    extract_paragraphs_with_word(input_pdf_path, output_csv_path, search_word)
 
