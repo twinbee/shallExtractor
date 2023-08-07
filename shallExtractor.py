@@ -2,6 +2,10 @@ import csv
 import PyPDF2
 import re
 import argparse
+import nltk.data
+
+nltk.download('punkt')
+sent_tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 
 def extract_paragraphs_with_word(input_file, output_file, search_word='shall'):
     pdf_text = ""
@@ -20,9 +24,14 @@ def extract_paragraphs_with_word(input_file, output_file, search_word='shall'):
         section_info = sections[i]
         section_desc = sections[i + 1] if i + 1 < len(sections) else ""
 
-        sentences = [line for line in sections[i + 2].split('\n') if search_word in line.lower()]
+        sentences = sent_tokenizer.tokenize(sections[i + 2])
+        relevant_sentences = []
         for sentence in sentences:
-            rows.append([section_info, section_desc, sentence])
+            if search_word in sentence.lower():
+                relevant_sentences.append(sentence.replace('\n', ' ').replace('  ', ' '))  # Remove line feeds and double spaces
+
+        for sentence in relevant_sentences:
+            rows.append([section_info, section_desc, sentence.strip()])
 
     with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
         csvwriter = csv.writer(csvfile)
