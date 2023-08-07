@@ -11,20 +11,22 @@ def extract_paragraphs_with_word(input_file, output_file, word='shall'):
             page = pdf_reader.getPage(page_num)
             pdf_text += page.extractText()
 
-    sections = re.split(r'\n(?=\d+\.\s)', pdf_text)  # Split into sections based on section numbering
+    section_pattern = r'(\d+(?:\.\d+)+)\s+([^\n]+)'  # Pattern to capture section info and description
+
+    sections = re.split(section_pattern, pdf_text)[1:]  # Skip the first element (empty)
 
     rows = []
-    for section in sections:
-        lines = section.strip().split('\n')
-        section_num = lines[0].split('.')[0]
-        section_desc = ' '.join(lines[0].split('.')[1:]).strip()
-        sentences = [line for line in lines[1:] if word in line.lower()]
+    for i in range(0, len(sections), 3):
+        section_info = sections[i]
+        section_desc = sections[i + 1] if i + 1 < len(sections) else ""
+
+        sentences = [line for line in sections[i + 2].split('\n') if word in line.lower()]
         for sentence in sentences:
-            rows.append([section_num, section_desc, sentence.strip()])
+            rows.append([section_info, section_desc, sentence.strip()])
 
     with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
         csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(['Section Number', 'Section Description', 'Sentence with "{}"'.format(word)])
+        csvwriter.writerow(['Section Info', 'Nearest Subheading', 'Sentence with "{}"'.format(word)])
         for row in rows:
             csvwriter.writerow(row)
 
