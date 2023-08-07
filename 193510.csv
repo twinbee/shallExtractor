@@ -24,7 +24,7 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 2.3.1,for the test object  moving at a speed of 1.0 m/s ± 0.05 m/s for,a.The delay between subsequent trials of a given test object  shall be no more than 5 s.
 2.3.1,for the test object  moving at a speed of 1.0 m/s ± 0.05 m/s for,b.The detector sensitivity shall not be readjusted between trials of a given test object  or between
 2.3.1,for the test object  moving at a speed of 1.0 m/s ± 0.05 m/s for,"the outer box represents the inside dimensions of the walk-through metal detector11This test shall be performed according to section 3.2.4, and the results shall be recorded.  The results of"
-2.3.4,Discrimination,The detector shall meet the requirements of section
+2.3.4,Discrimination,The detector shall meet the requirements of section 
 3.2.5,"for the innocuous item test objects moving at a speed of 1.0 m/s ± 0.1 m/s, and the","results shall be recorded.  The results of this test can also be called the probability of false alarm, pfa"
 2.3.5,Throughput Rate,The detector shall provide a positive alarm indication for the test object of the appropriate object
 0.5,"cm, 144 cm ± 0.5 cm, and 178 cm ± 0.5 cm when tested in accordance with section 3.2.7, and the",results shall be recorded.
@@ -46,17 +46,17 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 2.4.2.3,Body Interference,"The detector, when adjusted to meet the requirements of section 2.3.3, shall not produce a positive"
 2.4.2.3,Body Interference,alarm indication when tested in accordance with section 3.2.6; the results shall be recorded and a
 2.4.2.4,Multiple Object Interference (Large Object Size Class Only),The detector shall produce a positive alarm indication when tested in accordance with
-2.4.2.4,Multiple Object Interference (Large Object Size Class Only),section 3.2.8; the results shall be recorded and a report provided.
+2.4.2.4,Multiple Object Interference (Large Object Size Class Only),section 3.2.8; the results shall be recorded and a report provided. 
 2.4.3,Environmental Ranges and Conditions,The detector or all of its components and their interconnections shall meet the requirements of all of
 2.1,and section 2.5 shall not be affected by the,tests described in this section.  The requirements given in this section shall be applied appropriately for
 2.1,and section 2.5 shall not be affected by the,"either indoor, sheltered outdoor, or outdoor detector models.  The requirements of this section shall be"
 2.4.3,shall be performed on the same unit.  The,"detector, if tested for any of the tests listed in section 2.4.3, shall exhibit no observable changes in the"
-2.4.3.1.1,"Indoor, Sheltered Outdoor",The detector shall operate over the ambient temperature range of at least 0 C to 46 C (32 F to
+2.4.3.1.1,"Indoor, Sheltered Outdoor", The detector shall operate over the ambient temperature range of at least 0 C to 46 C (32 F to
 2.4.3.1.1,"Indoor, Sheltered Outdoor","115 F).  The detector shall be tested in accordance with MIL–STD–810F Method 501.4, Procedure"
-2.4.3.1.1,"Indoor, Sheltered Outdoor",then shall be cooled to 0 C ± 3 C within 4 h ±
+2.4.3.1.1,"Indoor, Sheltered Outdoor",then shall be cooled to 0 C ± 3 C within 4 h ± 
 142.4.3.1.2,Outdoor,The detector shall operate over the ambient temperature range of at least -37 C to 65 C (-35 F
 142.4.3.1.2,Outdoor,"to 149 F).  The detector shall be tested in accordance with MIL–STD–810F Method 501.4,"
-142.4.3.1.2,Outdoor,The detector then shall be cooled to -37 C ± 3 C within 4 h ±
+142.4.3.1.2,Outdoor,The detector then shall be cooled to -37 C ± 3 C within 4 h ± 
 2.4.3.2,Relative Humidity Stability and Range,The detector shall be tested in accordance with the requirements of MIL–STD–810F
 2.4.3.3,"Salt Fog, Sheltered Outdoor and Outdoor",The detector shall be tested in accordance with the requirements of MIL–STD–810F
 2.4.3.4.1,Indoor,The detector shall meet or exceed the requirements for compliance to IEC 60529 classification
@@ -64,15 +64,15 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 2.4.3.4.3,Outdoor,The detector shall meet or exceed the requirements for compliance to IEC 60529 classification
 2.4.3.5,"Solar Radiation (Sunshine), Outdoor Only",The detector shall be tested in accordance with and meet the requirements of MIL–STD–810F
 2.5.1,Dimensions and Weight,The detector shall be designed so the interior of the portal through which people will walk has the
-2.5.1,Dimensions and Weight,The detector shall have a mass of less than 100 kg (220 lb).
+2.5.1,Dimensions and Weight,The detector shall have a mass of less than 100 kg (220 lb). 
 2.5.2,Durability/Ruggedness,The detector or all of its components and their interconnections shall meet the requirements of the
 2.5.2.1,Impact Resistance,"The detector, if tested for any of the tests listed in section 2.5.2.1, shall exhibit no observable"
 2.5.2.1.1,Shock,"The detector shall be tested in accordance with the requirements of IEC 68–2–27 1987, as"
 2.5.2.1.2,Bump,The detector shall be disassembled and the control unit and columns of the detector shall be tested
 162.5.2.2,Pressure Resistance,as a result of casual bumping or pushing. The detector shall be capable of withstanding the forces
-2.5.2.2.1,Slide,A force shall be applied at
+2.5.2.2.1,Slide,A force shall be applied at 
 1.0,m ± 0.1 m (39 in ± 4 in) above the ground surface  in the direction,of passage until the detector starts to slide.  The detector shall be capable of withstanding the force of
-2.5.2.2.2,Tip-Over,The detector shall be tested in accordance with section
+2.5.2.2.2,Tip-Over,The detector shall be tested in accordance with section 
 5.4,of American Society for Testing and,"Materials (ASTM) Designation F 1468–95, as amended.  The test results shall be recorded and a"
 5.4,of American Society for Testing and,report provided.  The detector shall be capable of withstanding a force of 600 N (135 lb) applied to
 2.6.1,Program Storage,The detector shall have a means of storing the program and detection sensitivity settings in the event
@@ -106,7 +106,7 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 2.6.5,Field Servicing,"The detector shall be designed for ease of maintenance; that is, to clean, inspect, adjust, align, and"
 2.6.5,Field Servicing,repair.  The electronics shall be of modular design and easily accessible for maintenance and repair.
 2.7,Detector Mount,"The manufacturer shall provide with each detector, if requested, a detector mount for positioning"
-2.7,Detector Mount,shall comply with the requirements of section
+2.7,Detector Mount,shall comply with the requirements of section 
 2.8.1,Quality System,"The manufacturer shall meet the requirements of ISO 9001:2000, as amended."
 2.8.2,Testing and Calibration Laboratories,Laboratories performing testing and calibration of the detector and/or its components shall meet the
 2.8.3,Measurement Equipment and Processes,All measurement equipment and processes shall meet the requirements of ISO 10012–1 and ISO
@@ -122,7 +122,7 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 2.9.3,Technical Manual,A technical manual shall be provided upon request which contains all of the information that could
 2.9.4,Technical Training Manual and Videotape or CD-ROM,A self-study training package shall be provided  upon request for use by site maintenance
 2.9.5,Technical Specifications ,"The manufacturer shall provide, upon request, a detailed listing of all relevant specifications of the"
-2.9.5,Technical Specifications ,detector.   This listing shall include at a minimum:
+2.9.5,Technical Specifications ,detector.   This listing shall include at a minimum: 
 2.9.6,"Certifications of Test, Inspection, and Conformance","The manufacturer shall provide upon request a certification of all mandatory tests, test procedures,"
 2.9.7,Suggested Maintenance Schedule,The manufacturer shall provide a preventive maintenance schedule and a detailed list of the
 2.9.8,Installation Instructions,The manufacturer shall provide detailed instructions for the location and installation of the walk-
@@ -131,13 +131,13 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 2.9.8,Installation Instructions,it is required to operate.  The detection performance shall be evaluated by the test methods described
 2.9.8,Installation Instructions,in this section.  The manufacturer shall record and provide the test results on the report forms
 3.1.1,Test Location,The distance between any metal object other than a  test object  shall be at least 15 cm from the
-243.1.2,Environment,"At the time of the tests, the ambient temperature shall be in the range specified in section"
+243.1.2,Environment,"At the time of the tests, the ambient temperature shall be in the range specified in section "
 2.4.3.1,for,"the appropriate application (indoor, sheltered outdoor, or outdoor); the relative humidity shall be"
-3.1.3,Preparations,The walk-through metal detector shall be installed according to the manufacturer’s instructions.
+3.1.3,Preparations,The walk-through metal detector shall be installed according to the manufacturer’s instructions. 
 3.1.3,Preparations,Any setup or calibration adjustments specified in the operator's manual shall be performed if required.
 3.2,Detection Performance Tests,response  shall be recorded for each generator or sensor appropriate for the location of the test object
 3.2.1,Object Size Classes,"medium object size , the detection performance test shall be performed for each object size class . The"
-3.2.1,Object Size Classes,detection performance shall be evaluated by the test methods described in this section.
+3.2.1,Object Size Classes,detection performance shall be evaluated by the test methods described in this section.  
 3.2.2.1,Test Objects ,Test objects  shall be as described in section 5.  There are up to three orientation holes on up to
 3.2.2.1,Test Objects ,object ) and is the center of rotation of the different orientations.  The test objects  shall be oriented
 3.2.2.1,Test Objects ,shall use two characters: the first character indicates in which quadrant of the mechanical drawing the
@@ -147,7 +147,7 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 3.2.2.5,Microphone (Audible Alarm Indicators),The microphone is the audible alarm indication detector.  It shall be used to detect an audible
 3.2.2.6,Light Detector (Visible Alarm Indicators),The light detector is the visible alarm indication detector.  It shall be used to detect a visible
 3.2.2.8,Computer Controller,The computer controller shall have installed and operational all necessary hardware and software
-3.2.3.2,Performing the Measurement,The scan limits for the x-axis scan shall be the boundaries of the  test measurement grid locations .
+3.2.3.2,Performing the Measurement,The scan limits for the x-axis scan shall be the boundaries of the  test measurement grid locations . 
 3.2.3.2,Performing the Measurement,The center for both the x and z direction scans shall be the detector axis  (see fig. 1).  Set the computer
 3.2.6,Body Interference,The detector shall be placed in a sufficiently stable location so that walking through the portal does
 3.2.7.3,Test-Object Support Platform,"of 78 cm, 130 cm, and 178 cm.  The test-object support platform shall be constructed using the"
@@ -158,7 +158,7 @@ Section Info,Nearest Subheading,"Sentence with ""shall"""
 3.4.2.1,"Metal Test Panel, Steel Reinforced Floor",The test floor shall be cold-finished sheet carbon steel AISI C1015 to C1020 with dimensions of
 343.4.3.1,Metal Test Door,The metal test door shall consist of a metal plate made of cold-finished sheet carbon steel AISI
 3.5.1,Cycling of the Equipment,"Once each working shift (8 h), the detector shall be cycled on and off 10 times within 20 s and"
-3.5.2,Performance Evaluation,"Once each working shift (8 h), the detector shall be tested according to section"
+3.5.2,Performance Evaluation,"Once each working shift (8 h), the detector shall be tested according to section "
 4.1,Large Object Size,"The detector shall be turned on, and a clean tester shall walk through the detector portal carrying"
 4.1,Large Object Size,objects are properly detected.  The clean tester shall then walk through the detector portal carrying
 0.5,m/s to approximately 1.5 m/s to assure proper detector performance.354.2  Medium Object Size,The detector shall be turned on and a clean tester  shall walk through the detector portal carrying
